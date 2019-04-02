@@ -13,7 +13,7 @@ const {
 moviesRoutes.post('/', create);
 moviesRoutes.get('/', retrieveAll);
 moviesRoutes.get('/:id', retrieveOne);
-moviesRoutes.put('/', update);
-moviesRoutes.delete('/', deleteOne);
+moviesRoutes.put('/:id', update);
+moviesRoutes.delete('/:id', deleteOne);
 
 module.exports = moviesRoutes;

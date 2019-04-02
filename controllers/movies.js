@@ -17,11 +17,13 @@ function retrieveOne(req, res) {
 }
 
 function update(req, res) {
-    res.json({ message: 'Updated'});
+    const {id} = req.params;
+    res.json({ message: `Updated ${id}`});
 }
 
 function deleteOne(req, res) {
-    res.json({ message: 'Deleted'});
+    const {id} = req.params;
+    res.json({ message: `Deleted ${id}`});
 }
 
 module.exports = {
