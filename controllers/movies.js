@@ -8,8 +8,8 @@ function retrieveAll(req, res) {
 
 function retrieveOne(req, res) {
     const {id} = req.params;
-    const status = false;
-    if (status) {
+    const status = true;
+    if (status === true) {
         res.json({ message: `Retrieved ${id}`})
     } else {
         res.status(404).json({ message: "404 error, could not retrieve"});

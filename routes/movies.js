@@ -12,7 +12,7 @@ const {
 
 moviesRoutes.post('/', create);
 moviesRoutes.get('/', retrieveAll);
-moviesRoutes.get('/:id', retrieveOne);
+moviesRoutes.get('/:id([1-9]+)', retrieveOne);
 moviesRoutes.put('/:id', update);
 moviesRoutes.delete('/:id', deleteOne);
 
